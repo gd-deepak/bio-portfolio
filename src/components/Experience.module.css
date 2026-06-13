@@ -1,0 +1,234 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 52px;
+  align-items: start;
+}
+
+.timeline { display: flex; flex-direction: column; }
+
+.item { display: flex; gap: 20px; }
+
+.dotCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.dot {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  z-index: 1;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.line {
+  width: 2px;
+  flex: 1;
+  min-height: 24px;
+  background: var(--border);
+  margin: 4px 0;
+}
+
+.card {
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: 16px;
+  padding: 22px 24px;
+  margin-bottom: 24px;
+  flex: 1;
+  position: relative;
+  transition: all 0.25s;
+}
+
+.card:hover {
+  border-color: var(--border-strong);
+  box-shadow: 0 10px 36px var(--shadow);
+  transform: translateX(4px);
+}
+
+.current { }
+
+.current .card {
+  border-color: rgba(232,93,4,0.3);
+  background: linear-gradient(135deg, #fff8f2, #fff);
+}
+
+.badge {
+  position: absolute;
+  top: -10px; right: 16px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary-light));
+  padding: 3px 12px;
+  border-radius: 100px;
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.role {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.company {
+  font-size: 0.82rem;
+  color: var(--text-light);
+}
+
+.duration {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--primary);
+  background: rgba(232,93,4,0.08);
+  border: 1px solid rgba(232,93,4,0.2);
+  padding: 4px 10px;
+  border-radius: 100px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.point {
+  font-size: 0.85rem;
+  color: var(--text-mid);
+  line-height: 1.65;
+  padding-left: 16px;
+  position: relative;
+}
+
+.point::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-size: 0.75rem;
+}
+
+.techRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tech {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+  background: rgba(232,93,4,0.08);
+  border: 1px solid rgba(232,93,4,0.18);
+  padding: 3px 10px;
+  border-radius: 100px;
+}
+
+/* Sidebar */
+.sidebar { position: sticky; top: 100px; }
+
+.sideTitle {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+}
+
+.awardCard {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  transition: all 0.25s;
+}
+
+.awardCard:hover {
+  border-color: var(--gold);
+  box-shadow: 0 6px 20px rgba(217,119,6,0.12);
+}
+
+.awardIcon { font-size: 1.5rem; flex-shrink: 0; }
+
+.awardTitle {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.awardOrg {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  margin-top: 2px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.stat {
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.stat:hover {
+  border-color: var(--border-strong);
+  box-shadow: 0 6px 20px var(--shadow);
+}
+
+.statVal {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--primary-dark), var(--gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-top: 2px;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; gap: 36px; }
+  .sidebar { position: static; }
+}
+
+@media (max-width: 480px) {
+  .cardTop { flex-direction: column; }
+}
