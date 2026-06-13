@@ -13,7 +13,7 @@ export default function Hero() {
           </div>
 
           <h1 className={styles.name}>
-            I'm <span className={styles.highlight}>दिपक शंकर गाढवे-देशमुख</span>
+            I'm <span className={styles.highlight}>दिपक गाढवे-देशमुख</span>
           </h1>
 
           <div className={styles.roleRow}>
