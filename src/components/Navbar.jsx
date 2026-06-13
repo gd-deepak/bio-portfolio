@@ -5,7 +5,6 @@ const links = [
   { label: 'माझ्याबद्दल', id: 'about' },
   { label: 'शिक्षण', id: 'education' },
   { label: 'अनुभव', id: 'experience' },
-  { label: 'कौशल्ये', id: 'skills' },
   { label: 'फोटो', id: 'gallery' },
   { label: 'संपर्क', id: 'contact' },
 ]
