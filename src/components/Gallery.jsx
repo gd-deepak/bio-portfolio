@@ -26,7 +26,7 @@ export default function Gallery() {
         <span className="section-label">फोटो गॅलरी</span>
         {/* <h2 className="section-title">माझे छायाचित्रण</h2> */}
         <p className="section-subtitle" style={{ marginBottom: '48px' }}>
-          &nbsp;({photos.length} फोटो)
+          फोटो पाहण्यासाठी फोटो वर क्लिक करा. &nbsp;({photos.length} फोटो)
         </p>
 
         <div className={styles.grid}>

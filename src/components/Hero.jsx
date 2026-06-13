@@ -43,7 +43,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className={styles.btnPortfolio}
             >
-              🌐 Live Portfolio
+              🌐 Portfolio
             </a>
             <a
               href="/bio.pdf"

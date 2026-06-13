@@ -172,9 +172,9 @@
 
 .btnDownload {
   padding: 14px 28px;
-  background: transparent;
-  color: var(--green);
-  border: 2px solid rgba(21,128,61,0.4);
+  background: var(--green);
+  color: #fff;
+  border: 2px solid var(--green);
   border-radius: 10px;
   font-size: 0.95rem;
   font-weight: 700;
@@ -182,11 +182,12 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  cursor: pointer;
 }
 
 .btnDownload:hover {
-  background: rgba(21,128,61,0.08);
-  border-color: var(--green);
+  background: #166534; /* darker green */
+  border-color: #166534;
   transform: translateY(-3px);
 }
 
