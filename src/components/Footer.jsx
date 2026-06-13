@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={`container ${styles.inner}`}>
         <div className={styles.brand}>
-          <span className={styles.logo}>दिपक शंकर गाढवे-देशमुख</span>
+          <span className={styles.logo}>दिपक गाढवे-देशमुख</span>
           <p className={styles.tagline}>सॉफ्टवेअर अभियंता | सातारा, महाराष्ट्र 🇮🇳</p>
         </div>
 

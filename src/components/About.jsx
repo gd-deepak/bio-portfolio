@@ -51,8 +51,8 @@ export default function About() {
         <div className={styles.header}>
           <span className="section-label">माझ्याबद्दल</span>
           <h2 className="section-title">वैयक्तिक माहिती</h2>
-          <p className="section-subtitle">
-            एक उत्साही Software Engineer — सातारा जिल्ह्याचा मुलगा, पुण्यात कार्यरत.
+           <p className="section-subtitle">
+            Software Engineer, Developer, Passinate Innovator .
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export default function About() {
                 className={styles.img}
               />
               <div className={styles.imgOverlay}>
-                <span className={styles.overlayName}>दिपक शंकर गाढवे-देशमुख</span>
+                <span className={styles.overlayName}>दिपक गाढवे-देशमुख</span>
                 <span className={styles.overlayRole}>Software Engineer</span>
               </div>
             </div>
