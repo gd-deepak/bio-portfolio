@@ -44,7 +44,7 @@ export default function Education() {
                   <p className={styles.institution}>🏫 {edu.institution}</p>
                   <p className={styles.university}>🎓 {edu.university}</p>
                   <div className={styles.meta}>
-                    <span className={styles.year}>📅 {edu.year}</span>
+                    {/* <span className={styles.year}>📅 {edu.year}</span> */}
                     <span className={styles.grade}>⭐ {edu.grade}</span>
                   </div>
                 </div>

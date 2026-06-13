@@ -60,7 +60,7 @@ export default function Hero() {
             <div className={styles.photoRing} />
             <div className={styles.photoFrame}>
               <img
-                src="/photos/WhatsApp Image 2026-06-12 at 22.54.31 (1).jpeg"
+                src="/photos/A1.jpeg"
                 alt="दिपक गाढवे-देशमुख"
                 className={styles.photo}
               />

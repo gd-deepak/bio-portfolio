@@ -62,7 +62,7 @@ export default function About() {
           <div className={styles.photoCol}>
             <div className={styles.imgWrap}>
               <img
-                src="/photos/WhatsApp Image 2026-06-12 at 22.54.32.jpeg"
+                src="/photos/55.jpeg"
                 alt="दिपक गाढवे-देशमुख"
                 className={styles.img}
               />
