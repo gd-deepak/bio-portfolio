@@ -25,10 +25,10 @@ export default function Hero() {
             🏢 &nbsp;Vertical Relevance India Pvt. Ltd., Pune &nbsp;|&nbsp; 📍 Satara, Maharashtra
           </p>
 
-          <p className={styles.tagline}>
+          {/* <p className={styles.tagline}>
             Building tomorrow's world through technology —<br />
             one code, one solution, one dream.
-          </p>
+          </p> */}
 
           <div className={styles.actions}>
             <button

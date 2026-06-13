@@ -24,9 +24,8 @@ export default function Gallery() {
     <section id="gallery">
       <div className="container">
         <span className="section-label">फोटो गॅलरी</span>
-        <h2 className="section-title">माझे छायाचित्रण</h2>
+        {/* <h2 className="section-title">माझे छायाचित्रण</h2> */}
         <p className="section-subtitle" style={{ marginBottom: '48px' }}>
-          जीवनाच्या विविध रंगांना कॅमेऱ्यात टिपलेले क्षण.
           &nbsp;({photos.length} फोटो)
         </p>
 

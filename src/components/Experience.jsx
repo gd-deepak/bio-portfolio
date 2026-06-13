@@ -71,22 +71,22 @@ export default function Experience() {
                     </div>
                     <span className={styles.duration}>{job.duration}</span>
                   </div>
-                  <ul className={styles.points}>
+                  {/* <ul className={styles.points}>
                     {job.points.map((p, j) => (
                       <li key={j} className={styles.point}>{p}</li>
                     ))}
-                  </ul>
-                  <div className={styles.techRow}>
+                  </ul> */}
+                  {/* <div className={styles.techRow}>
                     {job.tech.map(t => (
                       <span key={t} className={styles.tech}>{t}</span>
                     ))}
-                  </div>
+                  </div> */}
                 </div>
               </div>
             ))}
           </div>
 
-          <div className={styles.sidebar}>
+          {/* <div className={styles.sidebar}>
             <h3 className={styles.sideTitle}>🏅 पुरस्कार & प्रमाणपत्रे</h3>
             {awards.map((a, i) => (
               <div key={i} className={styles.awardCard}>
@@ -111,7 +111,7 @@ export default function Experience() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

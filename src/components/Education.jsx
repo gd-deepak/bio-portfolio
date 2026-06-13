@@ -58,7 +58,7 @@ export default function Education() {
               <span className={styles.jobIcon}>💼</span>
               <div>
                 <p className={styles.jobLabel}>पद</p>
-                <p className={styles.jobValue}>Software Developer</p>
+                <p className={styles.jobValue}>Software Engineer</p>
               </div>
             </div>
             <div className={styles.jobCard}>
@@ -70,7 +70,7 @@ export default function Education() {
             </div>
 
             <div className={styles.downloadBox}>
-              <p className={styles.downloadText}>संपूर्ण जीवन परिचय डाउनलोड करा</p>
+              <p className={styles.downloadText}>संपूर्ण Biodata करण्यासाठी खाली क्लिक करा</p>
               <a
                 href="/bio.pdf"
                 download="दिपक_गाढवे_देशमुख_बायोडाटा.pdf"

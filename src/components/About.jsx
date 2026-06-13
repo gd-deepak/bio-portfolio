@@ -70,13 +70,13 @@ export default function About() {
               </div>
             </div>
 
-            <div className={styles.quoteBox}>
+            {/* <div className={styles.quoteBox}>
               <span className={styles.quoteIcon}>"</span>
               <p className={styles.quote}>
                 Every problem hides an opportunity —
                 I find that opportunity and bring it to life through code.
               </p>
-            </div>
+            </div> */}
           </div>
 
           <div className={styles.infoCol}>
