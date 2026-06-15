@@ -96,13 +96,13 @@ export default function Contact() {
                 <p className={styles.cardVal}>मु.पो. सिद्धेश्वर कुरोली, ता. खटाव, जि. सातारा — ४१५५२७</p>
               </div>
             </div>
-            <div className={styles.contactCard}>
+            {/* <div className={styles.contactCard}>
               <span className={styles.cardEmoji}>🕐</span>
               <div>
                 <p className={styles.cardLabel}>उपलब्धता</p>
                 <p className={styles.cardVal}>सोम — शुक्र, सकाळी ९ ते सायं ६</p>
               </div>
-            </div>
+            </div> */}
 
             <div className={styles.social}>
               <p className={styles.socialTitle}>सोशल मीडिया</p>
