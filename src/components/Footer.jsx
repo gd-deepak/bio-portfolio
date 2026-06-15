@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import styles from './Footer.module.css'
 
 const socials = [
@@ -8,6 +9,15 @@ const socials = [
 ]
 
 export default function Footer() {
+  const [visitors, setVisitors] = useState(0)
+
+  useEffect(() => {
+    fetch('https://api.countapi.xyz/hit/deepak-portfolio/visits')
+      .then((res) => res.json())
+      .then((data) => setVisitors(data.value))
+      .catch((err) => console.error(err))
+  }, [])
+
   return (
     <footer className={styles.footer}>
       <div className={`container ${styles.inner}`}>
@@ -32,6 +42,11 @@ export default function Footer() {
               </a>
             ))}
           </div>
+
+          <p className={styles.visitors}>
+            👀 : {visitors.toLocaleString()}
+          </p>
+
           <p className={styles.copy}>
             © {new Date().getFullYear()} सर्व हक्क राखीव · React &amp; Vite ने बनवले
           </p>

@@ -89,3 +89,11 @@
 @media (max-width: 600px) {
   .inner { flex-direction: column; text-align: center; }
 }
+
+.visitors {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  text-align: center;
+  color: #fff;
+}
