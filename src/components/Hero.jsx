@@ -1,6 +1,15 @@
 import styles from './Hero.module.css'
 
 export default function Hero() {
+   const handleDownload = async () => {
+    try {
+      await fetch(
+        'https://countapi.mileshilliard.com/api/v1/hit/deepak_bio_downloads'
+      )
+    } catch (err) {
+      console.error('Download counter error:', err)
+    }
+  }
   return (
     <section className={styles.hero} id="hero">
       <div className={styles.bgPattern} />
@@ -49,6 +58,7 @@ export default function Hero() {
               href="/bio.pdf"
               download="दिपक_गाढवे_देशमुख_बायोडाटा.pdf"
               className={styles.btnDownload}
+              onClick={handleDownload}
             >
               📄 बायोडाटा डाउनलोड करा
             </a>

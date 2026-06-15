@@ -23,6 +23,15 @@ const education = [
 ]
 
 export default function Education() {
+   const handleDownload = async () => {
+    try {
+      await fetch(
+        'https://countapi.mileshilliard.com/api/v1/hit/deepak_bio_downloads'
+      )
+    } catch (err) {
+      console.error('Download counter error:', err)
+    }
+  }
   return (
     <section id="education">
       <div className="container">
@@ -75,6 +84,7 @@ export default function Education() {
                 href="/bio.pdf"
                 download="दिपक_गाढवे_देशमुख_बायोडाटा.pdf"
                 className={styles.downloadBtn}
+                onClick={handleDownload}
               >
                 📄 बायोडाटा डाउनलोड करा
               </a>

@@ -18,6 +18,15 @@ export default function Footer() {
       .catch((err) => console.error(err))
   }, [])
 
+  const [downloads, setDownloads] = useState(0);
+
+useEffect(() => {
+  fetch('https://countapi.mileshilliard.com/api/v1/get/deepak_bio_downloads')
+    .then((res) => res.json())
+    .then((data) => setDownloads(data.value || 0))
+    .catch(console.error);
+}, []);
+
   return (
     <footer className={styles.footer}>
       <div className={`container ${styles.inner}`}>
@@ -46,6 +55,9 @@ export default function Footer() {
           <p className={styles.visitors}>
             👀 : {visitors.toLocaleString()}
           </p>
+          <p className={styles.visitors}>
+            📄 : {downloads.toLocaleString()}
+        </p>
 
           <p className={styles.copy}>
             © {new Date().getFullYear()} सर्व हक्क राखीव · React &amp; Vite ने बनवले
