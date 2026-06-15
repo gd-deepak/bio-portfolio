@@ -12,7 +12,7 @@ export default function Footer() {
   const [visitors, setVisitors] = useState(0)
 
   useEffect(() => {
-    fetch('https://api.countapi.xyz/hit/deepak-portfolio/visits')
+    fetch('https://countapi.mileshilliard.com/api/v1/hit/deepak_bio_visits')
       .then((res) => res.json())
       .then((data) => setVisitors(data.value))
       .catch((err) => console.error(err))
