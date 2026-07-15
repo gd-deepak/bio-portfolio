@@ -77,8 +77,8 @@ export default function Contact() {
               <span className={styles.cardEmoji}>✉</span>
               <div>
                 <p className={styles.cardLabel}>ईमेल</p>
-                <a href="mailto:dgadhave@verticalrelevance.com" className={styles.cardVal}>
-                  dgadhave@verticalrelevance.com
+                <a href="mailto:dev.deepaktech@gmail.com" className={styles.cardVal}>
+                  dev.deepaktech@gmail.com
                 </a>
               </div>
             </div>
